@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import Navbar from '../src/components/Navbar';
+import { Burger, Menu } from './components';
 import HomeSection from '../src/sections/Home';
 import AboutSection from '../src/sections/About';
 import GallerySection from '../src/sections/Gallery';
@@ -11,7 +11,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Burger/>
+      
       <HomeSection/>
       <AboutSection/>
       <GallerySection/>

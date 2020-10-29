@@ -10,6 +10,14 @@ a{
   text-transform: uppercase;
   text-decoration: none;
 }
+.navbar{
+  width: 100vw;
+  height: 50%;
+  background-color:rgb(49, 49, 49);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
 .openButton{
   margin: 0 auto;
   color: rgba(255, 255, 255, .5);
@@ -103,6 +111,23 @@ video {
   margin: 20px;
 }
 
+.nav-items a{
+  display: inline;
+  color: white;
+  margin: 20px;
+  font-size: 25px;
+}
+.nav-items{
+  margin-top:100px;
+}
+
 #copyright{
   margin-top:40px;
+}
+.nav-button{
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top:20px;
+  left: 20px;
 }
