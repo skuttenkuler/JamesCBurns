@@ -8,7 +8,7 @@ export default function Footer(){
                 <a href="#">Youtube</a>
                 <a href="#">IMDB</a>
             </ul>
-            <p>Copyright © 2018 Icewater Productions - All Rights Reserved.</p>
+            <p id="copyright">Copyright © 2018 Icewater Productions - All Rights Reserved.</p>
         </div>
     )
 };
