@@ -6,25 +6,42 @@
   height: 100vh;
   width: 100vw;
 }
-i{
-  margin: 0;
-  color:white;
+a{
+  text-transform: uppercase;
 }
-p {
+.openButton{
+  margin: 0 auto;
+  color: rgba(255, 255, 255, .5);
+  opacity: (0.5);
+  font-size: 30px;
+}
+h1 {
   margin: 0;
     position: relative;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    font-size:100px;
     font-weight:bold;
     color:white;
     text-transform: uppercase;
 }
-h1{
+p {
   margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight:bold;
+  color:white;
+  text-transform: uppercase;
+}
+.main-container{
+    margin: 0;
     position: relative;
-    top: 50%;
+    top: 75%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -45,5 +62,27 @@ video {
   background-image: url("./media/jimmyright.png");
   background-size: cover;
   background-repeat: no-repeat;
-
+}
+#gallery-section{
+  background-image: url("./media/jungle.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#press-section{
+  background-image: url("./media/cowboy.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-dropdown{
+  height: 100vh;
+  width: 100vw;
+  background-color:rgb(49, 49, 49);
+}
+.footer{
+  background-color:rgb(49, 49, 49);
+}
+.social-links a{
+  display: inline;
+  color: white;
+  margin:20px;
 }

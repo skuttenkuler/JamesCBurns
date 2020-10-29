@@ -1,12 +1,21 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { BiChevronDownCircle } from 'react-icons/bi';
+import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default function AboutSection(){
     return(
-        <div id="about-section" className="section">
-            <h1>About</h1>
-            <FontAwesomeIcon icon="arrow-alt-circle-down" />
+        <div className="container">
+            <div id="about-section" className="section">
+                <div className="main-container">
+                    <h1>About</h1>
+                    <BiChevronDownCircle className="openButton"/>
+                </div>
+            </div>
+            <div id="about-dropdown" className="section-dropdown">
+            <BiChevronUpCircle className="closeButton"/>
+            </div>
         </div>
     )
 };
