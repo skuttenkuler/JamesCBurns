@@ -10,6 +10,7 @@ export default function HomeSection(){
                 <source src={vid} type="video/mp4"/>
             </video>
             <h1>James C. Burns</h1>
+            <p>ACTOR - WRITER</p>
         </div>
     )
 };
