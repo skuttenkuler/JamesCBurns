@@ -7,6 +7,7 @@ import AboutSection from '../src/sections/About';
 import GallerySection from '../src/sections/Gallery';
 import PressSection from '../src/sections/Press';
 import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="App">

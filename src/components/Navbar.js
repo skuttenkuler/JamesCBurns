@@ -1,14 +1,12 @@
 import React from 'react';
+import DrawerButton from '../components/SideDrawer/DrawerButton';
 
-
-export default function Navbar(){
+const Navbar = props => {
     return(
-        <nav>
-            <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Press</li>
-            <li>Contact</li>
-        </nav>
+       <div className="header_toggle-button">
+            <DrawerButton click={props.drawerClickHandler}/>
+        </div>
     )
 }
+
+export default Navbar;

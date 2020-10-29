@@ -1,11 +1,13 @@
 import React from 'react';
 
-import vid from '../media/JimmyHome.mp4'
+import vid from '../media/JimmyHome.mp4';
+import DrawerButton from '../components/SideDrawer/DrawerButton';
 
-export default function HomeSection(){
+export default function HomeSection(props){
     
     return(
         <div id="home-section" className="section">
+            <DrawerButton click={props.drawerClickHandler}/>
             <video autoPlay loop muted>
                 <source src={vid} type="video/mp4"/>
             </video>
