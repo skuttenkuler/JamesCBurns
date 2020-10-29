@@ -1,19 +1,20 @@
 import React from 'react';
+import {bool} from 'prop-types';
 import { MenuStyle } from './Menu.styled';
 
-const Menu = () => {
+const Menu = ({open}) => {
     return(
-        <MenuStyle>
+        <MenuStyle open={open}>
             <a href="/">
                 Home
             </a>
-            <a href="/">
+            <a href="#about-section">
                 About
             </a>
-            <a href="/">
+            <a href="#gallery-section">
                 Gallery
             </a>
-            <a href="/">
+            <a href="#press-section">
                 Press
             </a>
             <a href="/">
@@ -21,5 +22,8 @@ const Menu = () => {
             </a>
         </MenuStyle>
     )
+}
+Menu.propTypes = {
+    open: bool.isRequired,
 }
 export default Menu;

@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import React, { useState } from 'react';
 import { Burger, Menu } from './components';
 import HomeSection from '../src/sections/Home';
 import AboutSection from '../src/sections/About';
@@ -9,10 +9,13 @@ import PressSection from '../src/sections/Press';
 import Footer from './components/Footer';
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
-      <Burger/>
-      
+      <div>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </div>
       <HomeSection/>
       <AboutSection/>
       <GallerySection/>
