@@ -5,7 +5,7 @@ import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default function PressSection(){
     return(
-        <div className="container">
+        <div>
         <div id="press-section" className="section">
             <div className="main-container">
                 <h1>Press</h1>

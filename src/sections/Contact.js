@@ -16,7 +16,7 @@ function sendEmail(e) {
       });
 }
     return(
-        <div className="container">
+        <div>
         <div id="contact-section" className="section">
             <div className="main-container">
                 <h1>Contact</h1>

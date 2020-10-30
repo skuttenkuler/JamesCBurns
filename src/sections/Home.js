@@ -8,11 +8,9 @@ export default function HomeSection(){
     const node = useRef();
     useOnClickOutside(node, () => setOpen(false));
     return(
-        <div id="home-section" className="section">
-            <div ref={node}>
+        <div id="home-section" className="section" ref={node}>
             <Burger open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
-            </div>
             <video autoPlay loop muted>
                 <source src={vid} type="video/mp4"/>
             </video>

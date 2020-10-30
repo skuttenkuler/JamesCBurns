@@ -1,10 +1,18 @@
 .App {
   text-align: center;
 }
+body, html{
+  background-color:rgb(219, 53, 53);
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y:auto;
+}
 
 .section{
   height: 100vh;
   width: 100vw;
+  
 }
 a{
   text-transform: uppercase;
@@ -65,6 +73,7 @@ p {
     font-weight:bold;
     color:white;
     text-transform: uppercase;
+   
 }
 video {
   object-fit: cover;
@@ -79,32 +88,31 @@ video {
   background-image: url("./media/jimmyright.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -161px;
+ 
 }
 #gallery-section{
   
   background-image: url("./media/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -161px;
 }
 #press-section{
   background-image: url("./media/cowboy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -161px;
+
 }
 #contact-section{
   background-image: url("./media/ocean.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -161px;
+  
 }
 .section-dropdown{
   height: 100vh;
   width: 100vw;
   background-color:rgb(49, 49, 49);
-  margin-left: -161px;
+  
  
 }
 .footer{
