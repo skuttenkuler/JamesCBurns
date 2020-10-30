@@ -2,22 +2,24 @@ import React from 'react';
 import {bool} from 'prop-types';
 import { MenuStyle } from './Menu.styled';
 
-const Menu = ({open}) => {
+const Menu = ({open, ...props}) => {
+    const isHidden = open ? true : false;
+    const tabIndex = isHidden ? 0 : -1;
     return(
-        <MenuStyle open={open}>
-            <a href="/">
+        <MenuStyle open={open} aria-hidden={!isHidden} {...props}>
+            <a href="/" tabIndex={tabIndex}>
                 Home
             </a>
-            <a href="#about-section">
+            <a href="#about-section" tabIndex={tabIndex}>
                 About
             </a>
-            <a href="#gallery-section">
+            <a href="#gallery-section" tabIndex={tabIndex}>
                 Gallery
             </a>
-            <a href="#press-section">
+            <a href="#press-section" tabIndex={tabIndex}>
                 Press
             </a>
-            <a href="/">
+            <a href="/" tabIndex={tabIndex}>
                 Icewater Productions
             </a>
         </MenuStyle>
