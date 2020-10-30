@@ -5,7 +5,7 @@ export const MenuStyle = styled.nav`
   z-index:999;
   flex-direction: row;
   justify-content: center;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
   background-color: black;
   width: 100%;
   height: 200px;
@@ -18,16 +18,16 @@ export const MenuStyle = styled.nav`
   a {
     font-size: 20px;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 4rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: white;
     text-decoration: none;
     transition: color 0.3s linear;
-    
+    margin:15px;
 
     &:hover {
-      color: white;
+      color: darkgray;
     }
   }
 `;

@@ -75,28 +75,37 @@ video {
   left: 0;
 }
 #about-section{
-  margin-top: -90px;
+  /* margin-top: -90px; */
   background-image: url("./media/jimmyright.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -161px;
 }
 #gallery-section{
-  margin : 0px !important;
+  
   background-image: url("./media/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -161px;
 }
 #press-section{
-  margin : 0px !important;
   background-image: url("./media/cowboy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -161px;
+}
+#contact-section{
+  background-image: url("./media/ocean.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -161px;
 }
 .section-dropdown{
   height: 100vh;
   width: 100vw;
   background-color:rgb(49, 49, 49);
-  display: none;
+  margin-left: -161px;
+ 
 }
 .footer{
   margin-top: -18px;
@@ -130,4 +139,7 @@ video {
   position: absolute;
   top:20px;
   left: 20px;
+}
+.contact-form{
+  margin-top: 100px;
 }

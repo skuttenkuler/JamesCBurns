@@ -20,7 +20,7 @@ const Menu = ({open, ...props}) => {
                 Press
             </a>
             <a href="/" tabIndex={tabIndex}>
-                Icewater Productions
+                Icewater
             </a>
         </MenuStyle>
     )
