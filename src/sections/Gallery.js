@@ -6,7 +6,7 @@ import { BiChevronUpCircle } from 'react-icons/bi';
 const photos = [
     {
         src: 'https://jimmyburns.s3-us-west-1.amazonaws.com/1.jpg',
-        width: 1,
+        width: 1.5,
         height: 2
     },
     {
@@ -36,13 +36,13 @@ const photos = [
     },
     {
         src: 'https://jimmyburns.s3-us-west-1.amazonaws.com/8.jpg',
-        width: 2,
-        height: 1 
+        width: 3,
+        height: 1.5 
     },
     {
         src: 'https://jimmyburns.s3-us-west-1.amazonaws.com/9.jpeg',
         width: 1,
-        height: 1 
+        height: 1.5 
     },
     {
         src: 'https://jimmyburns.s3-us-west-1.amazonaws.com/10.jpg',
