@@ -7,7 +7,7 @@ const Menu = ({open, ...props}) => {
     const tabIndex = isHidden ? 0 : -1;
     return(
         <MenuStyle open={open} aria-hidden={!isHidden} {...props}>
-            <a href="/" tabIndex={tabIndex}>
+            <a href="#home-section" tabIndex={tabIndex}>
                 Home
             </a>
             <a href="#about-section" tabIndex={tabIndex}>

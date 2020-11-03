@@ -4,10 +4,15 @@
 }
 body, html{
   background-color:rgb(49, 49, 49);
+  scroll-behavior: smooth;
 }
 h1,h4,p,li, a{
   text-shadow: 2px 2px #000;
   outline:none;
+  text-decoration: none;
+}
+.social-links a:hover{
+  cursor: pointer
 }
 BiChevronUpCircle{
   color: white !important;
