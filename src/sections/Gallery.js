@@ -51,22 +51,30 @@ const photos = [
     },
 ];
 export default class GallerySection extends React.Component{
-    
+    state = {
+        display: false,
+    }
     render(){
+        const {display} = this.state;
         return(
             <div>
                 <div id="gallery-section" className="section">
                     <div className="main-container">
                         <h1>Gallery</h1>
-                        <BiChevronDownCircle className="openButton"/>
+                        <a href="#gallery-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
                     </div>
                 </div>
+                { display 
+                    ? 
                 <div id="gallery-dropdown" >
-                    <BiChevronUpCircle className="closeButton"/>
+                    <a href="#gallery-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                     <div className="gallery-container">
                         <Gallery photos={photos} />
                     </div>
                 </div>
+                :
+                null
+                }
             </div>
             );
     }
