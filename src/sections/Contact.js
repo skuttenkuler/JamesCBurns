@@ -26,7 +26,7 @@ function sendEmail(e) {
         <div id="contact-dropdown" className="section-dropdown">
             <BiChevronUpCircle className="closeButton"/>
             <form className="contact-form" onSubmit={sendEmail}>
-                <div className="container">
+                <div>
                     <div className="col-6 pt-5 mx-auto">
                         <input type="text" className="form-control"  placeholder="Name" name="name" />
                     </div>

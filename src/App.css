@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  background-color:rgb(49, 49, 49);
 }
 body, html{
-  background-color:rgb(219, 53, 53);
+  background-color:rgb(49, 49, 49);
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-x: hidden;
@@ -83,6 +84,9 @@ video {
   top: 0;
   left: 0;
 }
+.container{
+  color:white;
+}
 #about-section{
   /* margin-top: -90px; */
   background-image: url("./media/jimmyright.png");
@@ -90,11 +94,19 @@ video {
   background-repeat: no-repeat;
  
 }
+
+.intro-col{
+  max-width: 50px;
+  width: 100%
+}
 #gallery-section{
   
   background-image: url("./media/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+#gallery-dropdown{
+  background-color:rgb(49, 49, 49);
 }
 #press-section{
   background-image: url("./media/cowboy.jpeg");
@@ -113,8 +125,18 @@ video {
   width: 100vw;
   background-color:rgb(49, 49, 49);
   
- 
 }
+.gallery-container{
+  width: 75%;
+  height:75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
 .footer{
   margin-top: -18px;
   background-color:rgb(49, 49, 49);
