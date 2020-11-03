@@ -105,7 +105,7 @@ video {
 }
 #about-section{
   /* margin-top: -90px; */
-  background-image: url("./media/jimmyright.png");
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/jimmyright.png");
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -121,7 +121,7 @@ video {
 }
 #gallery-section{
   
-  background-image: url("./media/jungle.jpeg");
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -129,7 +129,7 @@ video {
   background-color:rgb(49, 49, 49);
 }
 #press-section{
-  background-image: url("./media/cowboy.jpeg");
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/cowboy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -147,7 +147,7 @@ video {
   transform: scale(1.1);
 }
 #contact-section{
-  background-image: url("./media/ocean.png");
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/ocean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 

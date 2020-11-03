@@ -19,7 +19,7 @@ const Menu = ({open, ...props}) => {
             <a href="#press-section" tabIndex={tabIndex}>
                 Press
             </a>
-            <a href="/" tabIndex={tabIndex}>
+            <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
                 Icewater
             </a>
         </MenuStyle>
