@@ -3,48 +3,59 @@ import emailjs from 'emailjs-com';
 import { BiChevronDownCircle } from 'react-icons/bi';
 import { BiChevronUpCircle } from 'react-icons/bi';
 
-export default function ContactSection(){
+export default class ContactSection extends React.Component{
+    state = {
+        display: false,
+    }
 
-function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-}
+    render(){
+    const {display} = this.state;
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+    }
     return(
         <div>
-        <div id="contact-section" className="section">
-            <div className="main-container">
-                <h1>Contact</h1>
-                <BiChevronDownCircle className="openButton"/>
-            </div>
-        </div>
-        <div id="contact-dropdown" className="section-dropdown">
-            <BiChevronUpCircle className="closeButton"/>
-            <form className="contact-form" onSubmit={sendEmail}>
-                <div>
-                    <div className="col-6 pt-5 mx-auto">
-                        <input type="text" className="form-control"  placeholder="Name" name="name" />
-                    </div>
-                    <div className="col-6 form-group pt-2 mx-auto">
-                        <input type="email" className="form-control"  placeholder="Email Address" name="email" />
-                    </div>
-                    <div className="col-6 form-group pt-2 mx-auto">
-                        <input type="text" className="form-control"  placeholder="Subject" name="subject" />
-                    </div>
-                    <div className="col-6 form-group pt-2 mx-auto">
-                        <textarea className="form-control" id="" cols="30" row="8" placeholder="Your message.." name="message" />                   
-                    </div>
-                    <div>
-                        <input type="submit" className="btn btn-info" value="Send Message" />
-                    </div>
+            <div id="contact-section" className="section">
+                <div className="main-container">
+                    <h1>Contact</h1>
+                    <a href="#contact-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
                 </div>
-            </form>
-        </div>
+            </div>
+            {display
+            ?
+            <div id="contact-dropdown" className="section-dropdown">
+                <a href="#contact-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
+                <form className="contact-form" onSubmit={sendEmail}>
+                    <div>
+                        <div className="col-6 pt-5 mx-auto">
+                            <input type="text" className="form-control"  placeholder="Name" name="name" />
+                        </div>
+                        <div className="col-6 form-group pt-2 mx-auto">
+                            <input type="email" className="form-control"  placeholder="Email Address" name="email" />
+                        </div>
+                        <div className="col-6 form-group pt-2 mx-auto">
+                            <input type="text" className="form-control"  placeholder="Subject" name="subject" />
+                        </div>
+                        <div className="col-6 form-group pt-2 mx-auto">
+                            <textarea className="form-control" id="" cols="30" row="8" placeholder="Your message.." name="message" />                   
+                        </div>
+                        <div>
+                            <input type="submit" className="btn btn-info" value="Send Message" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            :
+            null
+            }
+        
     </div>
     )
-};
+}};
