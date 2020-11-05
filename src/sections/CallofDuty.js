@@ -22,7 +22,7 @@ export default class CODSection extends React.Component{
                 
                 { display 
                     ? 
-                    <div id="cod-container" className="container">
+                    <div id="cod-container">
                         <a href="#cod-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                         <div id="cod-row" className="row">
                             <div className="col-sm">

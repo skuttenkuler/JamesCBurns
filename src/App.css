@@ -11,7 +11,7 @@ body, html{
   background-color:rgb(49, 49, 49);
   scroll-behavior: smooth;
 }
-h1,h4,p,li, a{
+h1, h2, h4,p,li, a, button{
   font-family: 'GabrielBad';
   text-shadow: 2px 2px #000;
   outline:none;
@@ -23,9 +23,17 @@ h1,h4,p,li, a{
 BiChevronUpCircle{
   color: white !important;
 }
-.icewat-logo{
-  transform: scale(.2);
-  border: solid white;
+.ice-logo{
+  background-color: #ec6f00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:7px;
+  margin-right:40px;
+  box-shadow: 1px 1px 2px #000;
 }
 .navitems a{
   position: relative;
@@ -122,7 +130,7 @@ h2 {
     text-transform: uppercase;
    
 }
-video {
+#home-section video {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -157,26 +165,43 @@ video {
 }
 #cod-container{
   padding-bottom: 100px;
+  background-image: url("https://64.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_orh7h7ephj1ve5gdao1_500.gifv");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
+
 #demos-dropdown{
   height: 100%;
 }
+
 .cod-game-image img{
   margin-top: 20px;
   height: 400px;
   width: 300px;
-  box-shadow: 5px 10px 18px #000;
+  box-shadow: 5px 10px 18px rgb(37, 37, 37);
   border-radius: 5px;
   transition: all .2s ease-in-out;
 }
 .cod-game-image img:hover{
   transform: scale(1.1);
 }
+#cod-row h4, #copyright{
+  color:white;
+}
 .demo-vids {
-    padding: 5px 0 0 5px;
+    padding-top: 50px;
     width: 90%;
     position: relative;
     overflow: hidden;
+}
+#demos-section{
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/suit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.demo-vids{
+  justify-content: center;
 }
 .video-block{
   margin-right: 5px;

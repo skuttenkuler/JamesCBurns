@@ -27,7 +27,7 @@ const Menu = ({open, ...props}) => {
                     Social
                 </a>
                 <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
-                    Icewater Productions
+                    <button className="ice-logo">ICEWATER PRODUCTIONS</button>
                 </a>
             </div>
         </MenuStyle>

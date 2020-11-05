@@ -24,20 +24,12 @@ export default class ActingDemosSection extends React.Component{
                         <div id="demos-dropdown" className="section-dropdown">
                             <a href="#demos-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                             <div className="demo-vids">
-                                <div className="row">
-                                    <div className="video-block col-sm">
+                                <div className="row justify-content-center">
+                                    <div className="video-block col">
                                         <ReactPlayer url="https://www.youtube.com/watch?v=85Ye4f9qHS8&ab_channel=JamesCBurnsDemoLibrary"/>
                                     </div>
-                                    <div className="video-block col-sm">
-                                        <ReactPlayer url="https://www.youtube.com/watch?v=2GJwKjcKsQI&ab_channel=JamesCBurnsDemoLibrary"/>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="video-block col-sm">
-                                        <ReactPlayer url="https://www.youtube.com/watch?v=85Ye4f9qHS8&ab_channel=JamesCBurnsDemoLibrary"/>
-                                    </div>
-                                    <div className="video-block col-sm">
-                                        <ReactPlayer url="https://www.youtube.com/watch?v=85Ye4f9qHS8&ab_channel=JamesCBurnsDemoLibrary"/>
+                                    <div className="vid-text">
+                                        <a href="https://www.youtube.com/channel/UC-jadcXP5ENw54Hs8arNS9Q/videos"><p>View All Demos</p></a>
                                     </div>
                                 </div>
                             </div>
