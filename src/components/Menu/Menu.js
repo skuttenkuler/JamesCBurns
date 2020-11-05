@@ -7,21 +7,29 @@ const Menu = ({open, ...props}) => {
     const tabIndex = isHidden ? 0 : -1;
     return(
         <MenuStyle open={open} aria-hidden={!isHidden} {...props}>
-            <a href="#home-section" tabIndex={tabIndex}>
-                Home
-            </a>
-            <a href="#about-section" tabIndex={tabIndex}>
-                About
-            </a>
-            <a href="#gallery-section" tabIndex={tabIndex}>
-                Gallery
-            </a>
-            <a href="#press-section" tabIndex={tabIndex}>
-                Press
-            </a>
-            <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
-                Icewater
-            </a>
+            <div className="navitems">
+                <a href="#demos-section" tabIndex={tabIndex}>
+                    Acting Demos
+                </a>
+                <a href="#cod-section" tabIndex={tabIndex}>
+                    Call of Duty
+                </a>
+                <a href="#about-section" tabIndex={tabIndex}>
+                    About
+                </a>
+                <a href="#gallery-section" tabIndex={tabIndex}>
+                    Gallery
+                </a>
+                <a href="#press-section" tabIndex={tabIndex}>
+                    Press
+                </a>
+                <a href="#social-section" tabIndex={tabIndex}>
+                    Social
+                </a>
+                <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
+                    <img className="icewat-logo" src="https://jimmyburns.s3-us-west-1.amazonaws.com/ICEWATERLOGO.png" alt="icewater-logo"/>
+                </a>
+            </div>
         </MenuStyle>
     )
 }

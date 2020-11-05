@@ -24,7 +24,7 @@ export default class ContactSection extends React.Component{
         <div>
             <div id="contact-section" className="section">
                 <div className="main-container">
-                    <h1>Contact</h1>
+                    <h2>Contact</h2>
                     <a href="#contact-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
                 </div>
             </div>

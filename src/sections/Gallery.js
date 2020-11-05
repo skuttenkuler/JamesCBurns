@@ -60,7 +60,7 @@ export default class GallerySection extends React.Component{
             <div>
                 <div id="gallery-section" className="section">
                     <div className="main-container">
-                        <h1>Gallery</h1>
+                        <h2>Gallery</h2>
                         <a href="#gallery-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
                     </div>
                 </div>

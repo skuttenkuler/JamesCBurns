@@ -14,7 +14,7 @@ export default class AboutSection extends React.Component{
                 <div className="parallax-container">
                     <div id="about-section" className="section">
                         <div className="main-container">
-                            <h1>About</h1>
+                            <h2>About</h2>
                             <a href="#about-container"><BiChevronDownCircle className="openButton"  onClick={() => this.setState({ display : !display})}/></a>
                         </div>
                     </div>

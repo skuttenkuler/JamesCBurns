@@ -13,7 +13,7 @@ export default class PressSection extends React.Component{
             <div>
                 <div id="press-section" className="section">
                     <div className="main-container">
-                        <h1>Press</h1>
+                        <h2>Press</h2>
                         <a href="#press-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
                     </div>
                 </div>

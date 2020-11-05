@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const MenuStyle = styled.nav`
   display: flex;
   z-index:999;
-  flex-direction: row;
+  flex-direction: column;
+  text-align:center;
   justify-content: center;
-  transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   background-color: black;
-  width: 100%;
-  height: 200px;
+  width: 30%;
+  height: 100%;
   text-align: left;
   padding: 2rem;
   position: fixed;
@@ -18,9 +19,7 @@ export const MenuStyle = styled.nav`
   a {
     font-size: 20px;
     text-transform: uppercase;
-    padding: 4rem 0;
     font-weight: bold;
-    letter-spacing: 0.5rem;
     color: white;
     text-decoration: none;
     transition: color 0.3s linear;
