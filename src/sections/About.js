@@ -25,7 +25,7 @@ export default class AboutSection extends React.Component{
                     <div id="about-container" className="container">
                         <a href="#about-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                         <div id="about-row"className="row">
-                            <div className="intro-col col-3">
+                            <div className="intro-col col-4">
                                 <h4>Introduction</h4>
                                 <div className="intro-container">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -60,18 +60,6 @@ export default class AboutSection extends React.Component{
                                     <li>TV-Show 1 (2009)</li>
                                     <li>TV-Show 1 (2009)</li>
                                     <li>TV-Show 1 (2009)</li>
-
-                                </ul>
-                            </div>
-                            <div className="col-2">
-                                <h4>Gaming</h4>
-                                <br/>
-                                <ul>
-                                    <li>Call of Duty: Black Ops (2009)</li>
-                                    <li>Call of Duty: Black Ops II (2009)</li>
-                                    <li>Call of Duty: Black Ops III (2009)</li>
-                                    <li>Call of Duty: Black Ops IV (2009)</li>
-                                   
 
                                 </ul>
                             </div>
