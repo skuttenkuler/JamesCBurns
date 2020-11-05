@@ -29,9 +29,10 @@ BiChevronUpCircle{
 }
 .navitems a{
   position: relative;
-  top: 100px;
-  left: 50px;
+  top: 30px;
+  left: 40px;
   display: block;
+  padding-bottom: 40px;
 }
 li{
   list-style: none;
@@ -157,6 +158,9 @@ video {
 #cod-container{
   padding-bottom: 100px;
 }
+#demos-dropdown{
+  height: 100%;
+}
 .cod-game-image img{
   margin-top: 20px;
   height: 400px;
@@ -167,6 +171,17 @@ video {
 }
 .cod-game-image img:hover{
   transform: scale(1.1);
+}
+.demo-vids {
+    padding: 5px 0 0 5px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+.video-block{
+  margin-right: 5px;
+    margin-bottom: 5px;
+    float:left;
 }
 #gallery-section{
   

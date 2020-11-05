@@ -27,7 +27,7 @@ const Menu = ({open, ...props}) => {
                     Social
                 </a>
                 <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
-                    <img className="icewat-logo" src="https://jimmyburns.s3-us-west-1.amazonaws.com/ICEWATERLOGO.png" alt="icewater-logo"/>
+                    Icewater Productions
                 </a>
             </div>
         </MenuStyle>
