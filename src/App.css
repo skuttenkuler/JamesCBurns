@@ -28,7 +28,10 @@ BiChevronUpCircle{
   border: solid white;
 }
 .navitems a{
-  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: 50px;
+  display: block;
 }
 li{
   list-style: none;

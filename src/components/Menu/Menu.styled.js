@@ -7,8 +7,9 @@ export const MenuStyle = styled.nav`
   text-align:center;
   justify-content: center;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  background-color: black;
-  width: 30%;
+  background-color: rgba(0,0,0,.6);
+  
+  width: 25%;
   height: 100%;
   text-align: left;
   padding: 2rem;
