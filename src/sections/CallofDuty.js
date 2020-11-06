@@ -1,29 +1,13 @@
 import React from 'react';
 
-import { BiChevronDownCircle } from 'react-icons/bi';
-import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default class CODSection extends React.Component{
-    state = { 
-        display: false,
-    }
     render(){
-        const {display} = this.state;
+        
         return(
             <div>
-                <div className="parallax-container">
-                    <div id="cod-section" className="section">
-                        <div className="main-container">
-                            <h2>Call of Duty</h2>
-                            <a href="#cod-container"><BiChevronDownCircle className="openButton"  onClick={() => this.setState({ display : !display})}/></a>
-                        </div>
-                    </div>
-                </div>
-                
-                { display 
-                    ? 
+                <h2>Call of Duty</h2>
                     <div id="cod-container">
-                        <a href="#cod-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                         <div id="cod-row" className="row">
                             <div className="col-sm">
                                 <h4>Black Ops</h4> 
@@ -43,11 +27,14 @@ export default class CODSection extends React.Component{
                                     <a href="https://www.callofduty.com/blackops4"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/cod4.jpg" alt="codimage"/></a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
+                        <div className='row'>
+                            <div className="col">
+                                <h2> SRGT Frank Woods</h2>
+                                <img src="https://jimmyburns.s3-us-west-1.amazonaws.com/frankwoods.jpg" alt="frank woods"></img>
+                            </div>
+                        </div>
                     </div>
-                    :
-                    null
-                }
             </div>
             
         )
