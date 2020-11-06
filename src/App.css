@@ -173,11 +173,9 @@ h2 {
   max-width: 50px;
   width: 100%
 }
-#cod-banner{
-  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/frankwoods.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
+#cod-banner {
+  width: 75%;
+  height: 100%;
 }
 #cod-container{
   padding-bottom: 100px;

@@ -1,5 +1,6 @@
 
 import './App.css';
+import './App.scss';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import HomeSection from '../src/sections/Home';
@@ -10,6 +11,7 @@ import PressSection from '../src/sections/Press';
 import ContactSection from './sections/Contact';
 import AboutSection from '../src/sections/About';
 import Footer from './components/Footer';
+
 
 function App() {
   
