@@ -14,6 +14,7 @@ function App() {
   
   return (
     <div className="App">
+      <div className="fire"></div>
       <HomeSection/>
       <ActingDemosSection/>
       <CODSection/>
