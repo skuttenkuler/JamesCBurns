@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const BurgerStyled = styled.button`
+    display: none;
+
+  @media only screen and (max-width: 600px) {
     position: fixed;
     top: 5%;
     left: 2rem;
@@ -40,6 +43,7 @@ export const BurgerStyled = styled.button`
         transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
       }
     }
+  }
   `;
   
 
