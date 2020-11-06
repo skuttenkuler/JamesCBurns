@@ -5,7 +5,10 @@
 
 .App {
   text-align: center;
-  
+  background-color: black;
+}
+.video-button{
+  z-index: 99999;
 }
 .fire{
   width: 100vw;
@@ -184,6 +187,7 @@ h2 {
 
 #demos-dropdown{
   height: 100%;
+
 }
 
 .cod-game-image img{
@@ -222,9 +226,9 @@ h2 {
 }
 
 #demos-section{
-  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/suit.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  
 }
 .demo-vids{
   height: 100%;

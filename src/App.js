@@ -1,5 +1,6 @@
 
 import './App.css';
+import ReactDOM from 'react-dom';
 import React from 'react';
 import HomeSection from '../src/sections/Home';
 import ActingDemosSection from './sections/ActingDemos';
@@ -26,5 +27,9 @@ function App() {
     </div>
   );
 }
+ReactDOM.render(
+  <App />,
+    document.getElementById('root')
+)
 
 export default App;
