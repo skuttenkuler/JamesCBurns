@@ -31,7 +31,7 @@ export default class CODSection extends React.Component{
                         <div className='row'>
                             <div className="col">
                                 <h2> SRGT Frank Woods</h2>
-                                <img src="https://jimmyburns.s3-us-west-1.amazonaws.com/frankwoods.jpg" alt="frank woods"></img>
+                                <img id="srgt-frank" src="https://jimmyburns.s3-us-west-1.amazonaws.com/frankwoods.jpg" alt="frank woods"></img>
                             </div>
                         </div>
                     </div>

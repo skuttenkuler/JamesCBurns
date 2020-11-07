@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const MenuStyle = styled.nav`
-z-index:999;
+z-index:999999;
 text-align:center;
 justify-content: center;
-background-color: rgba(0,0,0,.6);
+background-color: rgba(0,0,0,1);
 width: 100%;
-height: 10%;
+height: 12%;
 position: fixed;
 top: 0;
 left: 0;

@@ -10,7 +10,7 @@
 .video-button{
   z-index: 99999;
 }
-.fire{
+/* .fire{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   opacity: .4;
   z-index: 9999 !important;
-}
+} */
 body, html{
   scroll-behavior: smooth;
 }
@@ -30,6 +30,16 @@ h1, h2, h4,p,li, a, button{
   text-shadow: 2px 2px #000;
   outline:none;
   text-decoration: none;
+  z-index: 99999;
+}
+.fa-icon{
+  height: 100px;
+  width: 100px;
+  color:red;
+}
+#char-header{
+  position: relative;
+  left:30%;
 }
 .social-links a:hover{
   cursor: pointer
@@ -125,7 +135,7 @@ h2 {
 #home-section p {
   margin: 0;
   position: relative;
-  top:6%;
+  top:12%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -226,7 +236,14 @@ h2 {
 #demos-section{
   height: 100%;
   width: 100%;
+  margin-top:50px;
   
+}
+.first-col{
+  float: right;
+}
+.third-col{
+  float:left;
 }
 .demo-vids{
   height: 100%;
@@ -292,6 +309,9 @@ h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   
+}
+#srgt-frank{
+  width: 50%
 }
 
 .footer{
