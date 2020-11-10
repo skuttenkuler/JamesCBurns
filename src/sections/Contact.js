@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { BiChevronDownCircle } from 'react-icons/bi';
+
 import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default class ContactSection extends React.Component{
@@ -25,7 +25,7 @@ export default class ContactSection extends React.Component{
             <div id="contact-section" className="section">
                 <div className="main-container">
                     <h2>Contact</h2>
-                    <a href="#contact-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
+                    <a href="#contact-dropdown"><span className="openButton" onClick={() => this.setState({ display : !display})}>Click Here</span></a>
                 </div>
             </div>
             {display

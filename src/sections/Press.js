@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BiChevronDownCircle } from 'react-icons/bi';
+
 import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default class PressSection extends React.Component{
@@ -14,7 +14,7 @@ export default class PressSection extends React.Component{
                 <div id="press-section" className="section">
                     <div className="main-container">
                         <h2>Press</h2>
-                        <a href="#press-dropdown"><BiChevronDownCircle className="openButton" onClick={() => this.setState({ display : !display})}/></a>
+                        <a href="#press-dropdown"><span className="openButton" onClick={() => this.setState({ display : !display})}>Click Here</span></a>
                     </div>
                 </div>
                 { display 

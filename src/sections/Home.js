@@ -14,8 +14,11 @@ export default function HomeSection(){
             <video autoPlay loop muted>
                 <source src="https://jimmyburns.s3-us-west-1.amazonaws.com/JimmyHome.mp4" type="video/mp4"/>
             </video>
-            <h1>James C. Burns</h1>
+            <div className="home-text">
+            <h1 class="header-text">James C. Burns</h1>
             <p>ACTOR - WRITER - DIRECTOR</p>
+            </div>
+           
             
         </div>
     )

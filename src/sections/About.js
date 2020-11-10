@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { BiChevronDownCircle } from 'react-icons/bi';
 import { BiChevronUpCircle } from 'react-icons/bi';
 
 export default class AboutSection extends React.Component{
@@ -15,7 +14,7 @@ export default class AboutSection extends React.Component{
                     <div id="about-section" className="section">
                         <div className="main-container">
                             <h2>About</h2>
-                            <a href="#about-container"><BiChevronDownCircle className="openButton"  onClick={() => this.setState({ display : !display})}/></a>
+                            <a href="#about-container"><span className="openButton"  onClick={() => this.setState({ display : !display})}>Learn More</span></a>
                         </div>
                     </div>
                 </div>
