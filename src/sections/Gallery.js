@@ -46,12 +46,10 @@ export default class GallerySection extends React.Component{
     
     render(){
         return(
-            <div>
-                <h2>Gallery</h2>
-                <div id="gallery-dropdown" >
+            <div id="gallery">
+                <h2 className="gallery-header">Gallery</h2>
                     <div className="gallery-container">
                         <ImageGallery items={images} showPlayButton={false} />
-                    </div>
                 </div>
             </div>
             );

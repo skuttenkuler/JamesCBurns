@@ -11,17 +11,17 @@ const Menu = ({open, ...props}) => {
                 <a href="#demos-section" tabIndex={tabIndex}>
                     Acting Demos
                 </a>
-                <a href="#cod-section" tabIndex={tabIndex}>
+                <a href="#cod" tabIndex={tabIndex}>
                     Call of Duty
                 </a>
-                <a href="#about-section" tabIndex={tabIndex}>
-                    About
-                </a>
-                <a href="#gallery-section" tabIndex={tabIndex}>
+                <a href="#gallery" tabIndex={tabIndex}>
                     Gallery
                 </a>
                 <a href="#press-section" tabIndex={tabIndex}>
-                    Press
+                    Press & Awards
+                </a>
+                <a href="#about-section" tabIndex={tabIndex}>
+                    About
                 </a>
                 <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
                     <button className="ice-logo">ICEWATER PRODUCTIONS</button>

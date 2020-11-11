@@ -36,6 +36,7 @@ h1, h2, h4,p,li, a, button{
 .demo-vid-img{
   height: 100px;
   width: 200px;
+  cursor: pointer;
   
 }
 #char-header{
@@ -83,6 +84,8 @@ li{
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
+  font-family: 'GabrielBad' ;
+  color:white;
 }
 row{
   margin-top: 50px;
@@ -216,15 +219,21 @@ margin-left: -150px;
   max-width: 50px;
   width: 100%
 }
+#cod{
+  margin-top:100px;
+  height: 100%;
+  width: 100vw;
+}
 #cod-banner {
   width: 75%;
   height: 100%;
+  margin-top:100px;
 }
-#cod-container{
+/* #cod-container{
   padding-bottom: 100px;
   
   
-}
+} */
 
 #demos-dropdown{
   height: 100%;
@@ -272,6 +281,7 @@ margin-left: -150px;
   margin-top:180px;
   
 }
+
 .first-col{
   float: right;
 }
@@ -290,20 +300,20 @@ margin-left: -150px;
   margin-right: -50%;
   transform: translate(-27%, -10%);
 }
+.gallery-header{
+margin-top:100px;
+}
 #gallery-section{
   
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-#gallery-dropdown{
-  background-color:rgb(49, 49, 49);
-}
+
 #press-section{
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/cowboy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 #press-dropdown img{
   margin-top: 100px;
@@ -328,10 +338,10 @@ margin-left: -150px;
   margin-top: 50px;
 }
 .section-dropdown{
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color:rgb(49, 49, 49);
-  
+  padding-bottom:50px;
 }
 .gallery-container{
   width: 75%;
@@ -345,6 +355,26 @@ margin-left: -150px;
 }
 #srgt-frank{
   width: 50%
+}
+.awards-header{
+  margin-top:50px;
+}
+.awards-row{
+  margin-top:100px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#trophy-icon{
+  transform:scale(3);
+  
+}
+.award-block{
+  width:90%;
+}
+.awards-row p{
+  margin-top:30px;
 }
 
 .footer{

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { BiChevronUpCircle } from 'react-icons/bi';
-
+import { BsTrophy } from 'react-icons/bs';
 export default class PressSection extends React.Component{
     state = { 
         display: false,
@@ -32,6 +32,38 @@ export default class PressSection extends React.Component{
                                     <a href="https://www.forbes.com/sites/johngaudiosi/2012/11/14/actor-james-burns-explains-why-sergeant-frank-woods-sucks-at-call-of-duty-black-ops-ii/?sh=64b2cb597fa3" ><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/Screen+Shot+2020-11-03+at+8.55.19+AM.png" alt="press"/></a>
                                 </div>
                             </div>
+                                <h2 className="awards-header">Awards</h2>
+                            <div className="row justify-content-center awards-row">
+                                <div className="col-3">
+                                    <div className="award-block">
+                                    <BsTrophy id="trophy-icon"/>
+                                    <p>2016 International Filmaker Festival of World Cinema, London
+                                            <br/>Courier X as "Walter Broadnax"			
+                                            <br/>Best Lead Actor</p>
+                                    </div>
+                                </div>
+                                <div className="col-3">
+                                <div className="award-block">
+                                    <BsTrophy id="trophy-icon"/>
+                                        <p>Call Of Duty Fan Vote  2012</p>
+                                    </div>
+                                </div>
+                                <div className="col-3">
+                                <div className="award-block">
+                                    <BsTrophy id="trophy-icon"/>
+                                    <p>2012 Character Of the Year
+                                            <br/>For the Role of SGT. FRANK WOODS from Call of Duty: Black Ops Played by James C Burns</p>
+                                    </div>
+                                </div>
+                                <div className="col-3">
+                                    <div className="award-block">
+                                    <BsTrophy id="trophy-icon"/>
+                                    <p> 2010 Spike Video Game Awards
+                                            <br/>Character of the Year For the Role of SGT. FRANK WOODS from Call of Duty: Black Ops Played by James C Burns</p>
+                                    </div>
+                                </div>
+
+                        </div>
                         </div>
                         :
                         null
