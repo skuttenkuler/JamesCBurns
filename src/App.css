@@ -211,8 +211,12 @@ margin-left: -150px;
  
 }
 .intro-container{
-  word-break: break-all;
+  
   height: 100%;
+}
+.intro-container p{
+  text-indent: 50px;
+  text-align: left;
 }
 
 .intro-col{
@@ -412,4 +416,8 @@ margin-top:100px;
 }
 .contact-form{
   margin-top: 100px;
+}
+#about-container{
+  height: 100%;
+  padding-bottom:50px;
 }
