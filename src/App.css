@@ -421,3 +421,7 @@ margin-top:100px;
   height: 100%;
   padding-bottom:50px;
 }
+/* mobile */
+@media only screen and (max-width: 600px) {
+ 
+}

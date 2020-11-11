@@ -26,34 +26,33 @@ a {
   }
 }
   @media only screen and (max-width: 600px) {
-  display: flex;
-  z-index:999;
-  flex-direction: column;
-  text-align:center;
-  justify-content: center;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  background-color: rgba(0,0,0,.6);
-  
-  width: 25%;
-  height: 100%;
-  text-align: left;
-  padding: 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s ease-in-out;
-  a {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s linear;
-    margin:15px;
 
-    &:hover {
-      color: darkgray;
+    z-index:999;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+    background-color: rgba(0,0,0, .9);
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    .navitems{
+      margin-top:100px;
+      postion:fixed;
+      top:0;
     }
-  }
-}
+    a {
+      postition:fixed !important;
+      display:block;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s linear;
+      &:hover {
+        color: darkgray;
+      }
+    }
 `;

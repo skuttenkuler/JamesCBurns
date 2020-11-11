@@ -39,7 +39,7 @@ export default class AboutSection extends React.Component{
                                     
                                 </div>
                         <div id="about-row"className="row">
-                            <div className="col">
+                            <div className="col col-xs-1 col-sm-1">
                                 <h4>Filmography</h4>
                                 <br/>
                                 <ul>
@@ -55,7 +55,7 @@ export default class AboutSection extends React.Component{
 
                                 </ul>
                             </div>
-                            <div className="col">
+                            <div className="col col-xs-1 col-sm-1">
                                 <h4>Television</h4>
                                 <br/>
                                 <ul>
@@ -71,7 +71,7 @@ export default class AboutSection extends React.Component{
 
                                 </ul>
                             </div>
-                            <div className="col">
+                            <div className="col col-xs-1 col-sm-1">
                                 <h4>Video Games</h4>
                                 <br/>
                                 <ul>
