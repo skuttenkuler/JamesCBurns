@@ -421,6 +421,9 @@ margin-top:100px;
   height: 100%;
   padding-bottom:50px;
 }
+#char-mobile-header{
+  display: none;
+}
 /* mobile */
 @media only screen and (max-width: 600px) {
   #home-section{
@@ -434,5 +437,27 @@ margin-top:100px;
     position: absolute;
     top: -50px;
     left: 0;
+  }
+  .main-char-header{
+    width: 100vw;
+    display:flex;
+    left:50%;
+  }
+  .character-container div{
+    display:inline;
+  }
+  .character-col{
+    top:100px;
+  }
+
+  #char-header{
+    display:none;
+  }
+  #char-mobile-header{
+    display:block;
+  }
+  .main-char-header{
+    font-size:50px;
+    top:20px;
   }
 }

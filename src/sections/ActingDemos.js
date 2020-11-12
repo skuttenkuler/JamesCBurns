@@ -29,9 +29,10 @@ export default class ActingDemosSection extends React.Component{
                                     </div>
                                 
                                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 character-col">
+                                        <h2 id="char-mobile-header"> Character Demos</h2>
                                         <React.Fragment>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='aljC2Esqgl4' onClose={() => this.setState({isOpen: false})} />
-                                            <img alt="demo"className="demo-vid-img" src="https://jimmyburns.s3-us-west-1.amazonaws.com/pain.png" onClick={this.openModal}/>
+                                            <img alt="demo"className="demo-vid-img vid1" src="https://jimmyburns.s3-us-west-1.amazonaws.com/pain.png" onClick={this.openModal}/>
                                         </React.Fragment>
                                             <p>Guys in Pain</p>
                                         <React.Fragment>
