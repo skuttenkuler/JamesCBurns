@@ -1,6 +1,8 @@
 import React from 'react';
 import {bool} from 'prop-types';
 import { MenuStyle } from './Menu.styled';
+import Resume from '../PDF/PDFbtn';
+
 
 const Menu = ({open, ...props}) => {
     const isHidden = open ? true : false;
@@ -23,9 +25,11 @@ const Menu = ({open, ...props}) => {
                 <a href="#about-section" tabIndex={tabIndex}>
                     About
                 </a>
+                <Resume/>
                 <a href="https://icewaterproductions.com/" tabIndex={tabIndex}>
                     <button className="ice-logo">ICEWATER PRODUCTIONS</button>
                 </a>
+                
             </div>
         </MenuStyle>
     )

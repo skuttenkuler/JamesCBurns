@@ -10,6 +10,9 @@
 .video-button{
   z-index: 99999;
 }
+a:hover{
+  text-decoration: none;
+}
 /* .fire{
   width: 100vw;
   height: 100vh;
@@ -71,13 +74,15 @@ a:link{
   border-radius:7px;
   margin-right:40px;
   box-shadow: 1px 1px 2px #000;
+  width:200px
 }
+
 .navitems a{
   position: relative;
   top: 30px;
   left: 40px;
   display: block;
-  padding-bottom: 40px;
+  
 }
 li{
   list-style: none;

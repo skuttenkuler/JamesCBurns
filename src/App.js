@@ -2,7 +2,7 @@
 import './App.css';
 import './App.scss';
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import HomeSection from '../src/sections/Home';
 import ActingDemosSection from './sections/ActingDemos';
 import CODSection from '../src/sections/CallofDuty';
@@ -12,12 +12,18 @@ import ContactSection from './sections/Contact';
 import AboutSection from '../src/sections/About';
 import Footer from './components/Footer';
 
+import { useOnClickOutside } from '../src/components/hook'; 
+import { Burger, Menu } from '../src/components';
 
 function App() {
-  
+    const [open, setOpen] = useState(false);
+    const node = useRef();
+    useOnClickOutside(node, () => setOpen(false));
   return (
-    <div className="App">
+    <div className="App" ref={node}>
       <div className="fire"></div>
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} setOpen={setOpen} />
       <HomeSection/>
       <ActingDemosSection/>
       <CODSection/>

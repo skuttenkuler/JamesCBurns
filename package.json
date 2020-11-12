@@ -1,6 +1,6 @@
 {
   "name": "jamescburns",
-  "homepage":"https://jamescburns.com/",
+  "homepage": "https://jamescburns.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-icons": "^3.11.0",
     "react-image-gallery": "^1.0.8",
     "react-modal-video": "^1.2.6",
+    "react-pdf": "^5.0.0",
     "react-photo-gallery": "^8.0.0",
     "react-player": "^2.6.2",
     "react-scripts": "4.0.0",
