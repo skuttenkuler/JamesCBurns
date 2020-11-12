@@ -347,6 +347,11 @@ margin-top:100px;
   background-color:rgb(49, 49, 49);
   padding-bottom:50px;
 }
+#press-click-button{
+  font-size:25px;
+  color:white;
+  text-decoration: none;
+}
 .gallery-container{
   width: 75%;
   height:75%;

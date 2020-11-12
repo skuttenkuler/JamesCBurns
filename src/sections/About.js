@@ -13,7 +13,7 @@ export default class AboutSection extends React.Component{
                 <div className="parallax-container">
                     <div id="about-section" className="section">
                         <div className="main-container">
-                            <h2>About</h2>
+                            <h1>About</h1>
                             <a href="#about-container"><span className="openButton"  onClick={() => this.setState({ display : !display})}>Learn More</span></a>
                         </div>
                     </div>

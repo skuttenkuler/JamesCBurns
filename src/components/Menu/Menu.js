@@ -23,7 +23,7 @@ const Menu = ({open, ...props}) => {
                 <a href="#about-section" tabIndex={tabIndex}>
                     About
                 </a>
-                <a href="www.icewaterproductions.com" tabIndex={tabIndex}>
+                <a href="https://icewaterproductions.com/" tabIndex={tabIndex}>
                     <button className="ice-logo">ICEWATER PRODUCTIONS</button>
                 </a>
             </div>
