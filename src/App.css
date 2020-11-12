@@ -460,7 +460,7 @@ margin-top:100px;
     font-size:50px;
     top:20px;
   }
-  #gallery-section{
+  #gallery-section,#press-section{
     background-size: contain;
     height:210px
   }
@@ -478,7 +478,33 @@ margin-top:100px;
   .gallery-header{
     top:100px;
   }
-  .gallery-header{
-    top:-50px;
+
+  .press-header{
+    top:50px;
+    
   }
+  
+  #press-click-button{
+   font-size: 20px;
+   color: white;
+   text-decoration:none;
+  }
+  #press-dropdown div{
+    display: block;
+    margin: 0 auto;
+    
+    
+  }
+  #press-dropdown a{
+    width:80vw;
+  }
+  #press-dropdown img{
+    width:80vw;
+    display:relative;
+    left: 0;
+  }
+  .award-block{
+    padding-bottom:50px;
+  }
+
 }
