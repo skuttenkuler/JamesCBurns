@@ -423,5 +423,16 @@ margin-top:100px;
 }
 /* mobile */
 @media only screen and (max-width: 600px) {
- 
+  #home-section{
+    height: 50vh;
+  }
+  .home-text{
+    top:200px;
+  }
+  #home-section video {
+    object-fit: contain;
+    position: absolute;
+    top: -50px;
+    left: 0;
+  }
 }
