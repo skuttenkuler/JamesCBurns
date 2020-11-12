@@ -485,9 +485,13 @@ margin-top:100px;
   }
   
   #press-click-button{
-   font-size: 20px;
+   font-size: 15px;
    color: white;
    text-decoration:none;
+   
+  }
+  #press-section a{
+    bottom: 25px !important;
   }
   #press-dropdown div{
     display: block;
@@ -511,5 +515,11 @@ margin-top:100px;
   }
   #about-row{
     display:block;
+  }
+  #copyright{
+    margin-top:25px;
+  }
+  .social-links{
+    margin-top:50px;
   }
 }

@@ -9,7 +9,7 @@ export default class AboutSection extends React.Component{
     render(){
         const {display} = this.state;
         return(
-            <div>
+            <div className="about-container-block">
                 <div className="parallax-container">
                     <div id="about-section" className="section">
                         <div className="main-container">
