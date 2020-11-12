@@ -139,6 +139,9 @@ h1{
   color:white;
   text-transform: uppercase;
 }
+#home-section{
+  margin-top:70px;
+}
 .home-text{
   margin: 0;
   position: relative;

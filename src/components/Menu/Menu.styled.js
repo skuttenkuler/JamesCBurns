@@ -6,7 +6,7 @@ text-align:center;
 justify-content: center;
 background-color: rgba(0,0,0,1);
 width: 100%;
-height: 20%;
+height: 15%;
 position: fixed;
 top: 0;
 left: 0;
