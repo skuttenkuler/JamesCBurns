@@ -460,4 +460,25 @@ margin-top:100px;
     font-size:50px;
     top:20px;
   }
+  #gallery-section{
+    background-size: contain;
+    height:210px
+  }
+  #gallery{
+    width: 100%;
+    height:auto;
+  }
+  .gallery-container{
+    width:100%;
+    height: auto;
+  }
+  .image-gallery{
+    width:80%
+  }
+  .gallery-header{
+    top:100px;
+  }
+  .gallery-header{
+    top:-50px;
+  }
 }
