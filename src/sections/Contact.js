@@ -14,6 +14,8 @@ export default class ContactSection extends React.Component{
             email:"",
             subject:"",
             message:"",
+            mailsent:false,
+            error: null,
         }
     }
     
