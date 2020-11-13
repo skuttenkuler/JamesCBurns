@@ -6,6 +6,7 @@
 .App {
   text-align: center;
   background-color: black;
+  
 }
 .video-button{
   z-index: 99999;
@@ -27,6 +28,7 @@ a:hover{
 } */
 body, html{
   scroll-behavior: smooth;
+  
 }
 
 h1, h2, h4,p,li, a, button{
@@ -96,18 +98,14 @@ row{
   margin-top: 50px;
 }
 
-.section{
-  height: 100vh;
-  width: 100vw;
-  
-}
+
 a{
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
 }
 .navbar{
-  width: 100vw;
+  width: 100%;
   height: 50%;
   background-color:rgb(49, 49, 49);
   position: fixed;
@@ -140,15 +138,12 @@ h1{
   text-transform: uppercase;
 }
 #home-section{
-  margin-top:70px;
+  top: 0;
+  width: 100%;
 }
 .home-text{
-  margin: 0;
   position: relative;
-  top: 25%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  top:175px;
   font-weight:bold;
   color:white;
   text-transform: uppercase;
@@ -199,14 +194,18 @@ margin-left: -150px;
 .character2-col{
   margin-top:180px;
 }
-
-#home-section video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 125px;
-  left: 0;
+/* responsive video */
+@media (min-aspect-ratio:16/9){
+  #home-section video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9){
+  #home-section video{
+    width: auto;
+    height: 100%;
+  }
 }
 .container{
   color:white;
@@ -216,6 +215,8 @@ margin-left: -150px;
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/jimmyright.png");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
  
 }
 .intro-container{
@@ -234,7 +235,7 @@ margin-left: -150px;
 #cod{
   margin-top:100px;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 #cod-banner {
   width: 75%;
@@ -320,12 +321,16 @@ margin-top:100px;
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/jungle.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 #press-section{
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/cowboy.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height:100vh;
 }
 #press-dropdown img{
   margin-top: 100px;
@@ -343,6 +348,8 @@ margin-top:100px;
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/ocean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 
   
 }
@@ -351,7 +358,7 @@ margin-top:100px;
 }
 .section-dropdown{
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color:rgb(49, 49, 49);
   padding-bottom:50px;
 }
@@ -476,7 +483,7 @@ margin-top:100px;
     left: 0;
   }
   .main-char-header{
-    width: 100vw;
+    width: 100%;
     display:flex;
     left:50%;
   }
@@ -498,8 +505,10 @@ margin-top:100px;
     top:20px;
   }
   #gallery-section,#press-section,#contact-section, #about-section{
-    background-size: contain;
-    height:210px
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    
   }
   #gallery{
     width: 100%;
@@ -553,6 +562,7 @@ margin-top:100px;
   #about-row{
     display:block;
   }
+
   #copyright{
     margin-top:25px;
   }

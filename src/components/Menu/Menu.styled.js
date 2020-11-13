@@ -4,13 +4,16 @@ export const MenuStyle = styled.nav`
 z-index:999999;
 text-align:center;
 justify-content: center;
-background-color: rgba(0,0,0,1);
+background-color: rgba(0,0,0,.95);
 width: 100%;
 height: 15%;
 position: fixed;
 top: 0;
 left: 0;
 transition: transform 0.3s ease-in-out;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+box-shadow: 0 10px 10px -5px #575757;
 a {
   display: inline;
   font-size: 20px;

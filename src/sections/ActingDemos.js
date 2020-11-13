@@ -1,6 +1,8 @@
 import React from 'react';
 import ModalVideo from 'react-modal-video';
 import ReactPlayer from 'react-player'
+import Fade from 'react-reveal/Fade';
+
 export default class ActingDemosSection extends React.Component{
     //set state to false initially
     constructor(){
@@ -16,18 +18,19 @@ export default class ActingDemosSection extends React.Component{
     }
     render(){
         return(
-           
+            <Fade bottom big>
                 <div id="demos-section" className="section">
-                
-                <h2 id="char-header"> Character Demos</h2>
+                    <h2 id="char-header"> Character Demos</h2>
                             <div className="container character-container">
                                 <div className="row">
+                               
                                     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 main-demo-col">
                                         <h2 className="main-char-header"> Main Demo </h2>
                                         <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
                                             <p>Commercials</p>
                                     </div>
-                                
+                                  
+                                  
                                     <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 character-col">
                                         <h2 id="char-mobile-header"> Character Demos</h2>
                                         <React.Fragment>
@@ -90,8 +93,9 @@ export default class ActingDemosSection extends React.Component{
                                             
                                         </div>
                                     </div>
-                            </div>
+                                </div>
                         </div>
+                        </Fade>
 
         )
     }
