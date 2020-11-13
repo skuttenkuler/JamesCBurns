@@ -1,6 +1,8 @@
 import React from 'react';
-
+import axios from 'axios'
 import { BiChevronUpCircle } from 'react-icons/bi';
+
+const API_PATH = "http://localhost:3000/utils/api/index.php"
 
 export default class ContactSection extends React.Component{
     state = {
@@ -23,6 +25,18 @@ export default class ContactSection extends React.Component{
     handleFormSubmit(e){
         e.preventDefault();
         console.log(this.state);
+        axios({
+            method:'post',
+            url: `${API_PATH}`,
+            headers: {'content-type': 'application/json'},
+            data: this.state
+        })
+        .then(result => {
+            this.setState({
+                mailSent: result.data.sent
+            })
+        })
+        .catch(error => this.setState({error: error.message}));
     }
     render(){
     const {display} = this.state;
@@ -80,6 +94,11 @@ export default class ContactSection extends React.Component{
                         <div>
                             <input type="submit" onClick={e => this.handleFormSubmit(e)} className="btn btn-info" value="Send Message" />
                         </div>
+                    </div>
+                    <div>
+                        {this.state.mailSent &&
+                            <div>Thank you! Message sent.</div>
+                        }
                     </div>
                 </form>
             </div>
