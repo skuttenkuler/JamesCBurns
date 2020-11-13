@@ -1,5 +1,4 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 
 import { BiChevronUpCircle } from 'react-icons/bi';
 
@@ -7,19 +6,24 @@ export default class ContactSection extends React.Component{
     state = {
         display: false,
     }
-
+    //email state
+    constructor(props){
+        super(props);
+        this.state={
+            name:"",
+            email:"",
+            subject:"",
+            message:"",
+        }
+    }
+    
+    //eventhandler
+    handleFormSubmit(e){
+        e.preventDefault();
+        console.log(this.state);
+    }
     render(){
     const {display} = this.state;
-    function sendEmail(e) {
-        e.preventDefault();
-    
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-    }
     return(
         <div>
             <div id="contact-section" className="section">
@@ -32,22 +36,47 @@ export default class ContactSection extends React.Component{
             ?
             <div id="contact-dropdown" className="section-dropdown">
                 <a href="#contact-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
-                <form className="contact-form" onSubmit={sendEmail}>
+                <form className="contact-form" action="#">
                     <div>
                         <div className="col-6 pt-5 mx-auto">
-                            <input type="text" className="form-control"  placeholder="Name" name="name" />
+                            <input type="text" 
+                                    id="name" 
+                                    className="form-control"  
+                                    placeholder="Name" 
+                                    name="name"
+                                    value={this.state.name}
+                                    onChange={e => this.setState({ name: e.target.value})} />
                         </div>
                         <div className="col-6 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control"  placeholder="Email Address" name="email" />
+                            <input type="email" 
+                                    id="email" 
+                                    className="form-control"  
+                                    placeholder="Email Address" 
+                                    name="email"
+                                    value={this.state.email}
+                                    onChange={e => this.setState({ email: e.target.value})} />
                         </div>
                         <div className="col-6 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control"  placeholder="Subject" name="subject" />
+                            <input type="text" 
+                                    id="subject" 
+                                    className="form-control"  
+                                    placeholder="Subject" 
+                                    name="subject" 
+                                    value={this.state.subject}
+                                    onChange={e => this.setState({ subject: e.target.value})} />
                         </div>
                         <div className="col-6 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" row="8" placeholder="Your message.." name="message" />                   
+                            <textarea className="form-control" 
+                                        id="message" 
+                                        cols="30" 
+                                        row="8" 
+                                        placeholder="Your message.." 
+                                        name="message"
+                                        value={this.state.message}
+                                        onChange={e => this.setState({ message: e.target.value})}  />                   
                         </div>
                         <div>
-                            <input type="submit" className="btn btn-info" value="Send Message" />
+                            <input type="submit" onClick={e => this.handleFormSubmit(e)} className="btn btn-info" value="Send Message" />
                         </div>
                     </div>
                 </form>
