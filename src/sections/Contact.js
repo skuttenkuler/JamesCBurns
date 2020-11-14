@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import { BiChevronUpCircle } from 'react-icons/bi';
 
-const API_PATH = "http://localhost:3000/utils/api/index.php"
+const API_PATH = "https://jamescburns.com/api/index.php"
 
 export default class ContactSection extends React.Component{
     state = {
@@ -52,7 +52,7 @@ export default class ContactSection extends React.Component{
             ?
             <div id="contact-dropdown" className="section-dropdown">
                 <a href="#contact-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
-                <form className="contact-form" action="#">
+                <form className="contact-form" action="/src/api/index.php">
                     <div>
                         <div className="col-6 pt-5 mx-auto">
                             <input type="text" 

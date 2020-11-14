@@ -7,6 +7,7 @@ import HomeSection from '../src/sections/Home';
 import ActingDemosSection from './sections/ActingDemos';
 import CODSection from '../src/sections/CallofDuty';
 import GallerySection from '../src/sections/Gallery';
+import SocialSection from './sections/Social';
 import PressSection from '../src/sections/Press';
 import ContactSection from './sections/Contact';
 import AboutSection from '../src/sections/About';
@@ -27,6 +28,7 @@ function App() {
       <HomeSection/>
       <ActingDemosSection/>
       <CODSection/>
+      <SocialSection/>
       <GallerySection/>
       <PressSection/>
       <ContactSection/>

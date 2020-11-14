@@ -16,7 +16,10 @@ const Menu = ({open, ...props}) => {
                 <a href="#cod" tabIndex={tabIndex}>
                     Call of Duty
                 </a>
-                <a href="#gallery" tabIndex={tabIndex}>
+                <a href="#social-section" tabIndex={tabIndex}>
+                    Social
+                </a>
+                <a href="#gallery-section" tabIndex={tabIndex}>
                     Gallery
                 </a>
                 <a href="#press-section" tabIndex={tabIndex}>

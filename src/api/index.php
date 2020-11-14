@@ -1,5 +1,9 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header(“Access-Control-Allow-Methods: PUT, GET, POST”);
+header(“Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept”);
+
+
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
@@ -21,14 +25,14 @@ if($_POST)
         mail($to, $subject, $msg, $headers);
 
         //echo json-encode
-        echojson_encode(array(
+        echo json_encode(array(
             "sent" => true
         ));
     }
 else
     {
         //error
-        echojson_encode(["sent" => false, "message" => "Something went wrong"]);
+        echo json_encode(["sent" => false, "message" => "Something went wrong"]);
     }
 
 
