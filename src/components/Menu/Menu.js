@@ -1,43 +1,72 @@
 import React from 'react';
-import {bool} from 'prop-types';
-import { MenuStyle } from './Menu.styled';
+import { Nav, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Resume from '../PDF/PDFbtn';
 
 
-const Menu = ({open, ...props}) => {
-    const isHidden = open ? true : false;
-    const tabIndex = isHidden ? 0 : -1;
-    return(
-        <MenuStyle open={open} aria-hidden={!isHidden} {...props}>
-            <div className="navitems">
-                <a href="#demos-section" tabIndex={tabIndex}>
-                    Acting Demos
-                </a>
-                <a href="#cod" tabIndex={tabIndex}>
-                    Call of Duty
-                </a>
-                <a href="#social-section" tabIndex={tabIndex}>
-                    Social
-                </a>
-                <a href="#gallery-section" tabIndex={tabIndex}>
-                    Gallery
-                </a>
-                <a href="#press-section" tabIndex={tabIndex}>
-                    Press & Awards
-                </a>
-                <a href="#about-section" tabIndex={tabIndex}>
-                    About
-                </a>
-                <Resume/>
-                <a href="https://icewaterproductions.com/" tabIndex={tabIndex}>
-                    <button className="ice-logo">ICEWATER PRODUCTIONS</button>
-                </a>
+export default class NavBar extends React.Component{
+    constructor(props){
+        super(props);
+
+        //set the toggle for dropdowns and default to false
+        this.toggle = this.toggle.bind(this);
+        this.onMouseEnter = this.onMouseEnter.bind(this);
+        this.onMouseExit = this.onMouseExit.bind(this);
+        this.state = {
+            dropdownOpen:false
+        };
+    }
+    //functions for toggle, open, exit
+    toggle() {
+        this.setState(prevState => ({
+          dropdownOpen: !prevState.dropdownOpen
+        }));
+      }
+    onMouseEnter(){
+        this.setState({
+            dropdownOpen:true
+        })};
+    onMouseExit(){
+        this.setState({
+            dropdownOpen:false
+        })};
+    render(){
+        return(
+            <div className="navbar">
+                <Nav>
+
                 
+                <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <DropdownToggle>
+                        ACTING
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <DropdownItem href="#">Character Index</DropdownItem>
+                        <DropdownItem href="#">Call of Duty</DropdownItem>
+                        <DropdownItem href="#">Commercials</DropdownItem>
+                        <DropdownItem href="#">Master Demo</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                <Dropdown className="d-inline-block" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <DropdownToggle>
+                        ABOUT
+                    </DropdownToggle>
+                    <DropdownMenu>
+                        <DropdownItem href="#">James C. Burns</DropdownItem>
+                        <DropdownItem href="#">Gallery</DropdownItem>
+                        <DropdownItem href="#">Contact</DropdownItem>
+                        <DropdownItem href="#"><Resume/></DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                <NavItem>
+                    <NavLink href="#">FOLLOW ME</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="#"><img src="" alt="icewater"/></NavLink>
+                </NavItem>
+                </Nav>
             </div>
-        </MenuStyle>
-    )
+            
+        
+        )
+    }
 }
-Menu.propTypes = {
-    open: bool.isRequired,
-}
-export default Menu;
