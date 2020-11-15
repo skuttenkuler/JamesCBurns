@@ -20,19 +20,11 @@ export default class ActingDemosSection extends React.Component{
         return(
             <Fade bottom big>
                 <div id="demos-section" className="section">
-                    <h2 id="char-header"> Character Demos</h2>
+                            
                             <div className="container character-container">
+                                <h2 id="main-char-header"> Character Index</h2>
                                 <div className="row">
-                               
-                                    <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 main-demo-col">
-                                        <h2 className="main-char-header"> Main Demo </h2>
-                                        <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
-                                            <p>Commercials</p>
-                                    </div>
-                                  
-                                  
-                                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 character-col">
-                                        <h2 id="char-mobile-header"> Character Demos</h2>
+                                    <div className="col character-col">
                                         <React.Fragment>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='aljC2Esqgl4' onClose={() => this.setState({isOpen: false})} />
                                             <img alt="demo"className="demo-vid-img vid1" src="https://jimmyburns.s3-us-west-1.amazonaws.com/pain.png" onClick={this.openModal}/>
@@ -58,9 +50,9 @@ export default class ActingDemosSection extends React.Component{
                                             <img alt="demo"className="demo-vid-img" src="https://jimmyburns.s3-us-west-1.amazonaws.com/Law.png" onClick={this.openModal}/>
 
                                         </React.Fragment>
-                                            <p>Law Enforement</p>
+                                            <p>Law Enforcement</p>
                                     </div>
-                                    <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 character2-col">
+                                    <div className="col character2-col">
                                         <React.Fragment>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='EEtvc1XQIDQ' onClose={() => this.setState({isOpen: false})} />
                                             <img alt="demo"className="demo-vid-img" src="https://jimmyburns.s3-us-west-1.amazonaws.com/Family.png" onClick={this.openModal}/>
@@ -87,12 +79,32 @@ export default class ActingDemosSection extends React.Component{
                                         <React.Fragment>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='6WGaoFbnDCU' onClose={() => this.setState({isOpen: false})} />
                                             <img alt="demo"className="demo-vid-img" src="https://jimmyburns.s3-us-west-1.amazonaws.com/Dangerous.png" onClick={this.openModal}/>
-
                                         </React.Fragment>
                                             <p>Dangerous Guys</p>
-                                            
+                                            <React.Fragment>
+                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='JbDNA_CsB28' onClose={() => this.setState({isOpen: false})} />
+                                            <img alt="demo"className="demo-vid-img" src="https://jimmyburns.s3-us-west-1.amazonaws.com/academics.png" onClick={this.openModal}/>
+                                        </React.Fragment>
+                                            <p>Academics</p>
                                         </div>
+
                                     </div>
+                            <div id="commerial-video" className="container commercials-container">
+                                <div className="row">
+                                    <div className="commercial-demo-col">
+                                        <h2 className="main-char-header"> Commercials </h2>
+                                        <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="master-demo"className="container master-demo-container">
+                                <div className="row">
+                                    <div className="master-demo-col">
+                                        <h2 className="main-char-header"> Master Demo </h2>
+                                        <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
+                                    </div>
+                                </div>
+                            </div>
                                 </div>
                         </div>
                         </Fade>
@@ -100,3 +112,5 @@ export default class ActingDemosSection extends React.Component{
         )
     }
 };
+
+

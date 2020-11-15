@@ -5,7 +5,7 @@
 
 .App {
   text-align: center;
-  background-image: url("https://64.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_orh7h7ephj1ve5gdao1_500.gifv");
+  background-image: url("https://64.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_orh7h7ephj1ve5gdao1_500.gifv"); 
   background-size: contain;
 }
 .video-button{
@@ -17,11 +17,16 @@ a:hover{
 a{
   text-decoration: none !important;
 }
+p{
+  color:white;
+}
 
 body, html{
   scroll-behavior: smooth;
   overflow-x:hidden;
+
 }
+
 
 h1, h2, h4,p,li, a, button{
   font-family: 'GabrielBad';
@@ -30,16 +35,12 @@ h1, h2, h4,p,li, a, button{
   text-decoration: none;
  
 }
-.navbar-toggler{
-  
-  
-}
 .navbar-toggler-icon{
   color: #ec6f00 !important;
 }
 .demo-vid-img{
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 300px;
   cursor: pointer;
   
 }
@@ -51,9 +52,13 @@ h1, h2, h4,p,li, a, button{
 .main-char-header{
   position: relative;
   margin-bottom: 100px;
-  margin-left: 50px;
+  
 }
-
+#cod-cameo{
+  width:500px;
+  height: auto;
+  margin-top:-100px;
+}
 .social-links a:hover{
   cursor: pointer
 }
@@ -65,7 +70,7 @@ a:link{
   text-decoration: none;
 }
 .dropdown-menu{
-  background-color:black !important;
+  background-color: rgba(0,0,0,.8) !important;
   color:white !important;
 }
 
@@ -83,7 +88,9 @@ a:link{
 }
 /* navbar */
 .navbar{
-  background-color: black !important;
+  background-color: rgba(0,0,0,.8) !important;
+  position: fixed !important;
+  height:100px !important;
 }
 .navbar-nav{
   position: absolute !important;
@@ -205,11 +212,11 @@ h2 {
 margin-left: -150px;
 }
 .character-col{
-  margin-left: 120px;
-  margin-top:180px;
+  
+  margin-top:100px;
 }
 .character2-col{
-  margin-top:180px;
+  margin-top:100px;
 }
 /* responsive video */
 @media (min-aspect-ratio:16/9){
@@ -344,30 +351,45 @@ margin-top:100px;
 #social-header{
   top: 40px;
 }
-.social-1 a, .social-2 a{
+.social-1 div, .social-2 div{
   display: inline-block;
-  background-color: white;
+  background-color: black;
   border-radius: 50px;
   margin: 20px;
   color:white;
-  box-shadow:5px 5px 2px rgb(147, 74, 0), 2px 2px 20px 2px black inset; 
+  box-shadow:5px 5px 2px rgb(39, 39, 39), 2px 2px 20px 2px rgb(39, 39, 39) inset; 
   text-decoration: none !important;
   transition: all .2s ease-in-out; 
+}
+.social-1 div, .social-2 div{
+  display: inline-block;
 }
 .social-1 a:hover, .social-2 a:hover{
   text-decoration: none !important;
   transform: scale(1.1);
 }
-#social-icon, #cameo{
-  width:250px;
+.social-icon-box{
+  height:150px;
   height: auto;
 }
+#social-image{
+  width:200px;
+  height:200px;
+}
+#insta-social-image{
+  width:200px;
+  height:150px;
+}
+/* #social-icon, #cameo{
+  width:250px;
+  height: auto;
+} */
 #nav-social-icon{
   width:50px;
   height: auto;
 }
 #press-section{
-  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/cowboy_long.jpg");
+  background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/unnamed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -375,8 +397,8 @@ margin-top:100px;
 }
 #press-dropdown img{
   margin-top: 100px;
-  height: 500px;
-  width: 400px;
+  height: 350px;
+  width: 250px;
   box-shadow: 5px 10px 18px #000;
   border-radius: 5px;
   transition: all .2s ease-in-out; 
@@ -393,6 +415,10 @@ margin-top:100px;
   width: 100%;
 
   
+}
+.commercial-demo-col,.master-demo-col{
+  float: none;
+    margin: 0 auto;
 }
 #about-row{
   margin-top: 50px;
@@ -485,12 +511,11 @@ margin-top:100px;
   display: none;
 }
 .roles-block{
-  background-color: #ec6f00;
+  background-color: black;
   border-radius: 15px;
   margin: 25px;
   justify-content: center;
-  box-shadow:5px 5px 2px rgb(147, 74, 0), 2px 2px 20px 2px black inset;  
-  
+  box-shadow:5px 5px 2px rgb(39, 39, 39), 2px 2px 20px 2px rgb(39, 39, 39) inset;  
 }
 .roles-block li{
   text-align: center;

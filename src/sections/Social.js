@@ -1,7 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { FaYoutube, FaInstagram, FaTwitterSquare } from "react-icons/fa";
-
+    
 export default function SocialSection(){
         return(
             <div id="social-section" >
@@ -10,36 +9,48 @@ export default function SocialSection(){
                                 <Fade left big>
                                     <div className="social-1">
                                             <ul>
-                                                <a href="https://www.cameo.com/5ef287a799be7b00268724a4">
-                                                    <img id="cameo" alt="cameo" src="https://jimmyburns.s3-us-west-1.amazonaws.com/cmaeo.png"/>
-                                                    <p>Cameo</p>
+                                                <div className="social-icon-box">
+                                                    <a href="https://www.cameo.com/5ef287a799be7b00268724a4">
+                                                        <img id="social-image" alt="cameo" src=""/>
+                                                        <p>Cameo</p>
                                                     </a>
-                                                <a href="https://www.youtube.com/playlist?list=PLb6xA2mR3X-gSrPI4qqoKY7Mr62WIZErr">
-                                                    <FaYoutube id="social-icon"/>
-                                                    <p>Livestream</p>
-                                                </a>
+                                                </div>
+                                                <div className="social-icon-box">
+                                                    <a href="https://www.youtube.com/playlist?list=PLb6xA2mR3X-gSrPI4qqoKY7Mr62WIZErr">
+                                                        <img id="social-image"src="https://jimmyburns.s3-us-west-1.amazonaws.com/youtube-logo.png" alt="youtube"/>
+                                                        <p>Livestream</p>
+                                                    </a>
+                                                </div>
+                                                <div className="social-icon-box">
                                                 <a href="https://www.youtube.com/user/Sgtfrankwoods">
-                                                    <FaYoutube id="social-icon"/>
+                                                    <img id="social-image"src="https://jimmyburns.s3-us-west-1.amazonaws.com/youtube-logo.png" alt="youtube"/>
                                                     <p>Sarge's Corner</p>
                                                 </a>
+                                                </div>
                                             </ul>
                                     </div>
                                 </Fade>
                                 <Fade right big>
                                     <div className="social-2">
                                             <ul>
+                                                <div className="social-icon-box">
                                                 <a href="https://www.instagram.com/jamesc.burns">
-                                                   <FaInstagram id="social-icon"/>
+                                                   <img id="social-image"src="https://jimmyburns.s3-us-west-1.amazonaws.com/insta-logo.png" alt="insta"/>
                                                    <p>James C. Burns</p>
                                                 </a>
+                                                </div>
+                                                <div className="social-icon-box">
                                                 <a href="https://twitter.com/sgt_frank_woods?lang=en">
-                                                    <FaTwitterSquare id="social-icon"/>
-                                                    <p>Srgt Frank Woods</p>
+                                                <img id="social-image"src="https://jimmyburns.s3-us-west-1.amazonaws.com/twitter-logo.png" alt="twitter"/>
+                                                    <p>Sgt. Frank Woods</p>
                                                 </a>
+                                                </div>
+                                                <div className="social-icon-box">
                                                 <a href="https://twitter.com/jamescburns?lang=en">
-                                                    <FaTwitterSquare id="social-icon"/>
+                                                    <img id="social-image"src="https://jimmyburns.s3-us-west-1.amazonaws.com/twitter-logo.png" alt="twitter"/>
                                                     <p>James C. Burns</p>
                                                 </a>
+                                                </div>
                                             </ul>
                                     </div>
                                 </Fade> 
