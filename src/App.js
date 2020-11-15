@@ -14,7 +14,7 @@ import AboutSection from '../src/sections/About';
 import Footer from './components/Footer';
 
 import { useOnClickOutside } from '../src/components/hook'; 
-import { Burger, Menu } from '../src/components';
+import { Menu, Burger } from '../src/components';
 
 function App() {
     const [open, setOpen] = useState(false);
@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="App" ref={node}>
       <div className="fire"></div>
-      <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
       <HomeSection/>
       <ActingDemosSection/>

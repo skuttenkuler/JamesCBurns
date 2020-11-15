@@ -17,18 +17,7 @@ a:hover{
 a{
   text-decoration: none !important;
 }
-/* .fire{
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-image: url("https://64.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_orh7h7ephj1ve5gdao1_500.gifv");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .4;
-  z-index: 9999 !important;
-} */
+
 body, html{
   scroll-behavior: smooth;
   overflow-x:hidden;
@@ -39,7 +28,14 @@ h1, h2, h4,p,li, a, button{
   text-shadow: 2px 2px #000;
   outline:none;
   text-decoration: none;
-  z-index: 99999;
+ 
+}
+.navbar-toggler{
+  
+  
+}
+.navbar-toggler-icon{
+  color: #ec6f00 !important;
 }
 .demo-vid-img{
   height: 100px;
@@ -68,26 +64,44 @@ span{
 a:link{
   text-decoration: none;
 }
-.ice-logo{
-  background-color: #ec6f00;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius:7px;
-  margin-right:40px;
-  box-shadow: 1px 1px 2px #000;
-  width:200px
+.dropdown-menu{
+  background-color:black !important;
+  color:white !important;
 }
 
-.navitems a{
-  position: relative;
-  top: 30px;
-  left: 40px;
-  display: block;
-  
+#nav-item{
+  font-size:25px;
+  color: white;
+}
+#nav-item:hover{
+  background-color:#ec6f00 !important;
+  z-index: 99999;
+}
+#ice-logo{
+  height: 100px;
+  width: auto;
+}
+/* navbar */
+.navbar{
+  background-color: black !important;
+}
+.navbar-nav{
+  position: absolute !important;
+  right: 0 !important;
+}
+.nav-menu a{
+  color: white !important;
+}
+.nav-menu-item{
+  margin-top:30px;
+}
+.social-nav-links{
+  height:50px;
+  width: auto;
+}
+#icewater-logo{
+  width:200px;
+  height: auto;
 }
 li{
   list-style: none;
@@ -348,6 +362,10 @@ margin-top:100px;
   width:250px;
   height: auto;
 }
+#nav-social-icon{
+  width:50px;
+  height: auto;
+}
 #press-section{
   background-image: url("https://jimmyburns.s3-us-west-1.amazonaws.com/cowboy_long.jpg");
   background-size: cover;
@@ -505,7 +523,7 @@ margin-top:100px;
   #home-section video {
     object-fit: contain;
     position: absolute;
-    top: -50px;
+    top: 0;
     left: 0;
   }
   .main-char-header{
