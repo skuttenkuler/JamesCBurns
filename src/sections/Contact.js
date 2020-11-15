@@ -41,7 +41,7 @@ export default class ContactSection extends React.Component{
     render(){
     const {display} = this.state;
     return(
-        <div>
+        <div id="getintouch">
             <div id="contact-section" className="section">
                 <div className="main-container">
                     <h2>Contact</h2>

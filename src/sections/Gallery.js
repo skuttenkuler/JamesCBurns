@@ -52,7 +52,7 @@ export default class GallerySection extends React.Component{
     render(){
         const {display} = this.state;
         return(
-            <div>
+            <div id="photo-gallery">
             <div id="gallery-section" className="section">
                 <div className="main-container">
                     <h2 className="gallery-header">Gallery</h2>
