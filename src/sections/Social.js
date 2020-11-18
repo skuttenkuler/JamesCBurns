@@ -4,6 +4,10 @@ import Fade from 'react-reveal/Fade';
 export default function SocialSection(){
         return(
             <div id="social-section" >
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                     <h2 id="social-header">Follow Me</h2>
                             <div className="social-container">
                                 <Fade left big>

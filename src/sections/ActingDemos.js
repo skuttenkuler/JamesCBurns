@@ -1,5 +1,4 @@
 import React from 'react';
-import ModalVideo from 'react-modal-video';
 import ReactPlayer from 'react-player'
 import Fade from 'react-reveal/Fade';
 
@@ -14,6 +13,7 @@ import Cowboys from '../components/CharacterIndex/Cowboys';
 import BlueCollar from '../components/CharacterIndex/BlueCollar';
 import DangerousGuys from '../components/CharacterIndex/DangerousGuys';
 import Academics from '../components/CharacterIndex/Academics';
+import Commercials from '../components/Commercials/Commercials';
 export default class ActingDemosSection extends React.Component{
     //set state to false initially
     constructor(){
@@ -56,7 +56,7 @@ export default class ActingDemosSection extends React.Component{
                                 <div className="row">
                                     <div className="commercial-demo-col">
                                         <h2 className="main-char-header"> Commercials </h2>
-                                        <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
+                                        <Commercials/>
                                     </div>
                                 </div>
                             </div>

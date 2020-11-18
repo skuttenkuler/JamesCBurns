@@ -318,6 +318,10 @@ margin-left: -150px;
   margin-top:180px;
   
 }
+.commercials-vid img{
+  transform: scale(2);
+  margin-top:40px;
+}
 
 .first-col{
   float: right;

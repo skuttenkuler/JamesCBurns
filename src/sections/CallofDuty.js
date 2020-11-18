@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactPlayer from 'react-player'
-
+import ReactPlayer from 'react-player';
+import BlackOpsI from '../components/COD/BlackOps1';
 export default class CODSection extends React.Component{
     render(){
         
@@ -28,9 +28,7 @@ export default class CODSection extends React.Component{
                         <div id="cod-row" className="row">
                             <div className="col-sm">
                                 <h4>Black Ops</h4> 
-                                <div className="cod-game-image">
-                                    <a href="https://www.youtube.com/watch?v=CNCVdaEm5Ao&ab_channel=SARGE%27SCORNER"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/cod.png" alt="codimage"/></a>
-                                </div>
+                                <BlackOpsI/>
                             </div>
                             <div className="col-sm">
                                 <h4>Black Ops II</h4>
