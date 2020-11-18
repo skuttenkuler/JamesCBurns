@@ -23,28 +23,30 @@ export default class PressSection extends React.Component{
                             <a href="#press-section"><BiChevronUpCircle className="closeButton" onClick={() => this.setState({ display : !display})}/></a>
                             <div className="row">
                                 <div className="col-md-3 col-xs-1 col-sm-1">
-                                    
                                     <a href="https://www.nytimes.com/2014/08/15/movies/coldwater-a-brutal-tale-of-juvenile-lockup.html" ><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/nytimes.png" alt="press"/><p>New York Times</p></a>
                                 </div>
                                 <div className="col-md-3 col-xs-1 col-sm-1">
-                                    <a href="https://www.makeuseof.com/tag/interview-james-c-burns-call-duty-black-ops/"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/Screen+Shot+2020-11-03+at+9.10.17+AM.png" alt="press"/><p>Make Use Of</p></a>
+                                    <a href="https://www.huffpost.com/entry/moca-answers-the-call-of-_b_779337"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/huff.png" alt="press"/><p>Huffington Post</p></a>
                                 </div>
                                 <div className="col-md-3 col-xs-1 col-sm-1">
-                                  <a href="http://www.offdutygamers.com/2013/02/spartan117gw-meets-sgt-frank-woods/"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/Screen+Shot+2020-11-03+at+8.54.23+AM.png" alt="press"/><p>Off Duty Gamers</p></a>
+                                    <a href="https://www.makeuseof.com/tag/interview-james-c-burns-call-duty-black-ops/"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/Screen+Shot+2020-11-03+at+9.10.17+AM.png" alt="press"/><p>Make Use Of</p></a>
                                 </div>
                                 <div className="col-md-3 col-xs-1 col-sm-1">
                                     <a href="https://www.forbes.com/sites/johngaudiosi/2012/11/14/actor-james-burns-explains-why-sergeant-frank-woods-sucks-at-call-of-duty-black-ops-ii/?sh=64b2cb597fa3" ><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/forbes.png" alt="press"/><p>Forbes</p></a>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-md-4 col-xs-1 col-sm-1">
+                                <div className="col-md-3 col-xs-1 col-sm-1">
                                     <a href="https://www.complex.com/pop-culture/2011/02/the-man-who-would-be-woods-a-conversation-with-james-c-burns-of-black-ops"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/complex.png" alt="press"/><p>Complex</p></a>
                                 </div>
-                                <div className="col-md-4 col-xs-1 col-sm-1">
+                                <div className="col-md-3 col-xs-1 col-sm-1">
                                   <a href="https://moviesgamesandtech.com/2013/06/30/exclusive-interview-with-james-c-burns-the-voice-of-sgt-woods-from-black-ops-at-e3-2013/"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/mgandt.png" alt="press"/><p>Movies, Games, and Tech</p></a>
                                 </div>
-                                <div className="col-md-4 col-xs-1 col-sm-1">
+                                <div className="col-md-3 col-xs-1 col-sm-1">
                                     <a href="http://www.gamertagradio.com/2011/08/sgt-frank-woods-interview-call-of-duty-black-ops/" ><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/gtradio.png" alt="press"/><p>Gamertag Radio</p></a>
+                                </div>
+                                <div className="col-md-3 col-xs-1 col-sm-1">
+                                  <a href="http://www.offdutygamers.com/2013/02/spartan117gw-meets-sgt-frank-woods/"><img src="https://jimmyburns.s3-us-west-1.amazonaws.com/Screen+Shot+2020-11-03+at+8.54.23+AM.png" alt="press"/><p>Off Duty Gamers</p></a>
                                 </div>
                             </div>
                                 <h2 className="awards-header">Awards</h2>

@@ -88,7 +88,7 @@ a:link{
 }
 /* navbar */
 .navbar{
-  background-color: rgba(0,0,0,.8) !important;
+  background-color: rgb(0,0,0) !important;
   position: fixed !important;
   height:100px !important;
 }

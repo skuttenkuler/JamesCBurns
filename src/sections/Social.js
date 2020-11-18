@@ -11,7 +11,7 @@ export default function SocialSection(){
                                             <ul>
                                                 <div className="social-icon-box">
                                                     <a href="https://www.cameo.com/5ef287a799be7b00268724a4">
-                                                        <img id="social-image" alt="cameo" src=""/>
+                                                        <img id="social-image" alt="cameo" src="https://jimmyburns.s3-us-west-1.amazonaws.com/cameo-logo.png"/>
                                                         <p>Cameo</p>
                                                     </a>
                                                 </div>

@@ -6,7 +6,7 @@ export default class CODSection extends React.Component{
         
         return(
             <div id="cod">
-                <div id="master-demo"className="container master-demo-container">
+                <div id="cod-demo"className="container master-demo-container">
                     <div className="row">
                         <div className="master-demo-col">
                             <h2 className="main-char-header"> Call of Duty: Black Ops </h2>
