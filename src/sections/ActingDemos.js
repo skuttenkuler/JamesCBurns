@@ -60,6 +60,10 @@ export default class ActingDemosSection extends React.Component{
                                     </div>
                                 </div>
                             </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                             <div id="master-demo"className="container master-demo-container">
                                 <div className="row">
                                     <div className="master-demo-col">
