@@ -11,6 +11,9 @@ export default function SocialSection(){
                     <h2 id="social-header">Follow Me</h2>
                             <div className="social-container">
                                 <Fade left big>
+                                <a href="https://www.youtube.com/user/Sgtfrankwoods">
+                                    <img id="sgt-corner-image" src="https://jimmyburns.s3-us-west-1.amazonaws.com/SC-logo.png" alt="sc-logo"></img>
+                                </a>
                                     <div className="social-1">
                                             <ul>
                                                 <div className="social-icon-box">

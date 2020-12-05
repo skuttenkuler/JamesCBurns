@@ -311,7 +311,17 @@ margin-left: -150px;
   text-transform: uppercase;
   
 }
-
+#social-header{
+  margin-top: 100px;
+  margin-bottom:-100px;
+}
+#sgt-corner-image{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 #demos-section{
   height: 100%;
   width: 100%;
@@ -354,9 +364,7 @@ margin-top:100px;
   width: 100%;
   height: 100vh;
 }
-#social-header{
-  top: 40px;
-}
+
 .social-1 div, .social-2 div{
   display: inline-block;
   background-color: black;

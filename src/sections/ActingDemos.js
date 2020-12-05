@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player'
+
 import Fade from 'react-reveal/Fade';
 
 import GuysInPain from '../components/CharacterIndex/GuysInPain'
@@ -14,6 +14,7 @@ import BlueCollar from '../components/CharacterIndex/BlueCollar';
 import DangerousGuys from '../components/CharacterIndex/DangerousGuys';
 import Academics from '../components/CharacterIndex/Academics';
 import Commercials from '../components/Commercials/Commercials';
+import MasterDemo from '../components/MasterDemo/MasterDemo';
 export default class ActingDemosSection extends React.Component{
     //set state to false initially
     constructor(){
@@ -68,7 +69,7 @@ export default class ActingDemosSection extends React.Component{
                                 <div className="row">
                                     <div className="master-demo-col">
                                         <h2 className="main-char-header"> Master Demo </h2>
-                                        <ReactPlayer url='https://www.youtube.com/watch?v=i5CHg5YlqnA&list=PLSyh-q5pbVOWK1FY1FJmJg-1DZE3w6fkZ&index=9&ab_channel=JamesCBurnsDemoLibrary' />
+                                        <MasterDemo/>
                                     </div>
                                 </div>
                             </div>
